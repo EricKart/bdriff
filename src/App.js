@@ -26,6 +26,8 @@ import Collaborate from "./pages/about/Collaborate";
 import Blogs from "./components/blogs/Blogs";
 import IndividualBlog from "./pages/about/IndividualBlog";
 import Corporate from "./pages/program/Corporate";
+import ReadBlog from "./pages/about/ReadBlog";
+import ReadMore1Blog from "./pages/about/ReadMore1Blog";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -39,6 +41,8 @@ const router = createBrowserRouter(
       <Route path="about/collaborations" element={<Collaborate />} />
       <Route path="about/blogs" element={<Blogs />} />
       <Route path="about/individualblog" element={<IndividualBlog />} />
+      <Route path="about/readblog" element={<ReadBlog/>} />
+      <Route path="about/readmore1blog" element={<ReadMore1Blog/>} />
       <Route element={<CourseLayout />}>
         <Route path="/courses/instruments/:courseName" element={<Courses />} />
         <Route path="/courses/vocals" element={<Vocals />} />
